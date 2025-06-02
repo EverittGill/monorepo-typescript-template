@@ -1,0 +1,34 @@
+{
+  "name": "kibbitz",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "Community Governance Review Platform (Kibbitz)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EverittGill/Kibbitz.git"
+  },
+  "keywords": [
+    "community",
+    "governance",
+    "review",
+    "hoa",
+    "local government",
+    "kibbitz"
+  ],
+  "author": "Everitt Gill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EverittGill/Kibbitz/issues"
+  },
+  "homepage": "https://github.com/EverittGill/Kibbitz#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

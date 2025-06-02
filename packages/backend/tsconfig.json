@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+      /* Base Options */
+      "target": "ES2022", // Target modern ECMAScript version supported by current Node.js LTS
+      "module": "NodeNext", // Use Node.js's native ES module system
+      "moduleResolution": "NodeNext", // How modules get resolved
+      "lib": ["ES2022"], // Standard library features available
+      "esModuleInterop": true, // Enables compatibility with CommonJS modules
+      "allowSyntheticDefaultImports": true, // Works with esModuleInterop
+      "forceConsistentCasingInFileNames": true, // Enforces case sensitivity in file names
+      "isolatedModules": true, // Ensures that each file is treated as a module and cannot access variables outside of its scope
+  
+      /* Strict Type-Checking Options */
+      "strict": true, // Enables all strict type-checking options
+      "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
+      "strictNullChecks": true, // Differentiates null and undefined from other types
+      "strictFunctionTypes": true, // Enable stricter checking of function types
+      "strictPropertyInitialization": true, // Ensure class properties are initialized in the constructor
+      "noImplicitThis": true, // Raise error on 'this' expressions with an implied 'any' type
+      "alwaysStrict": true, // Parse in strict mode and emit "use strict" for each source file
+  
+      /* Module Resolution Options */
+      // "baseUrl": "./", // Optional: Base directory to resolve non-absolute module names
+      // "paths": {}, // Optional: Series of entries which re-map imports to lookup locations
+  
+      /* Source Map Options */
+      "sourceMap": true, // Generate corresponding '.map' file for debugging
+      "outDir": "./dist", // Redirect output structure to the directory
+      "rootDir": "./src", // Specify the root directory of input files
+  
+      /* Emit Options */
+      "declaration": true, // Generate corresponding '.d.ts' file (useful for libraries, optional for apps)
+      "removeComments": true, // Do not emit comments to output
+      // "noEmit": true, // Do not emit outputs (if using a bundler like Webpack/ESBuild for output) - We will emit for now
+  
+      /* Experimental Options */
+      // "experimentalDecorators": true,
+      // "emitDecoratorMetadata": true,
+  
+      /* Advanced Options */
+      "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
+      "resolveJsonModule": true // Allows importing .json files
+    },
+    "include": [
+      "src/**/*" // Which files to include in compilation
+    ],
+    "exclude": [
+      "node_modules", // Which files/folders to exclude
+      "dist",
+      "**/*.spec.ts", // Exclude test files from main build if tests are co-located
+      "**/*.test.ts"
+    ]
+  }
